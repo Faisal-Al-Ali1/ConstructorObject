@@ -25,9 +25,14 @@
         const car2 = new Car('Toyota', 'Corolla', 2020);
         const car3 = new Car('Lexus', 'LFA', 2012);
 
-        console.log(car1.getDetails())
-        console.log(car2.getDetails())
-        console.log(car3.getDetails())
+        const arr = [car1, car2, car3];
+
+        arr.forEach(element => {
+            console.log(element.getDetails());
+        });
+
+
+
 
 
 
