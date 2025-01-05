@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Q1
+        function Car(brand, model, year) {
+            this.brand = brand;
+            this.model = model;
+            this.year = year;
+
+            this.getDetails = function () {
+                return `Brand: ${this.brand}, Model: ${this.model}, Year: ${this.year}`;
+            }
+        };
+
+        const car1 = new Car('Hyundai', 'Elantra', 2017);
+        const car2 = new Car('Toyota', 'Corolla', 2020);
+        const car3 = new Car('Lexus', 'LFA', 2012);
+
+        console.log(car1.getDetails())
+        console.log(car2.getDetails())
+        console.log(car3.getDetails())
+
+
+
+        // Q2
+        const persons = {
+            name: ['Faisal', 'Feda', 'Fadi', 'alaa', 'ali', 'Mohammad', 'Rami']
+        }
+        function firstName(obj) {
+            return console.log(Object.values(obj));
+        };
+
+        firstName(persons);
+
+        // Q3
+
+        const person = {
+            firstname: 'Faisal',
+            lastname: 'Al-Ali',
+            age: 22,
+            address: 'Zarqa,Jordan'
+        }
+        function objectToArray(obj) {
+            let arr = [Object.keys(obj), Object.values(obj)]
+            return console.log(arr)
+        };
+
+        objectToArray(person);
+
+    </script>
+</body>
+
+</html>
